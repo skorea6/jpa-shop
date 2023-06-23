@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/jpashop
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      # create: 기존테이블 삭제 후 다시 생성 (DROP + CREATE)
+      # create-drop: create 와 같으나 종료시점에 테이블 DROP
+      # update: 변경분만 반영
+      # validate: 엔티티와 테이블이 정상 매핑되었는지만 확인
+      # none: 사용하지 않음
+
+      # 개발 초기 단계는 create 또는 update
+      # 테스트 서버는 update 또는 validate
+      # 스테이징과 운영 서버는 validate 또는 none (중요)
+      ddl-auto: create
+    properties:
+      hibernate:
+#      show_sql: true
+        format_sql: true
+        # fetch size는 쿼리 한번에 in절에 (?, ? ..) 총 몇개가 들어갈것인지. 100~1000 추천, 500~800추천
+        default_batch_fetch_size: 1000
+    # osiv 대규모 트래픽 발생시 false.
+    open-in-view: true
+
+
+logging.level:
+  org.hibernate.SQL: debug
+  org.hibernate.type: trace
