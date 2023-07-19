@@ -23,7 +23,7 @@
 - psvm : 자동 입력 public static void main(String[] args) { }
 - sout : 자동 입력 systemctl.print
 
-- 테스트 코드 만들때 : tdd (미리 설정 필요)
+- tdd : 테스트 코드 만들때 (미리 설정 필요)
 
 
 ## JPA DB ORM 설계
