@@ -5,6 +5,7 @@
 ## 인텔리제이 단축키 (Mac)
 - opt + alt + v = memberService.findOne(saveId).get() : 앞에 함수 자동완성
 - cmd + shift + enter : 현재 구문 자동 완성, 현재 커서에서 다음줄로 한칸 띄워서 이동
+- cmd + shift + r : 디렉토리나 파일 선택후 여러파일에서 replace 필요할때
 - fori, fore : for, foreach문 자동 생성
 - iter : 특정한 값을 이용해 for문 자동 생성
 - cmd + d = 같은 줄 아래쪽으로 복사 
