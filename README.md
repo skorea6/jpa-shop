@@ -23,6 +23,7 @@
 - cmd + opt + c = 상위에 변수로 만들기
 - cmd + opt + b = 구현 여러개 보기
 
+- shift + f6 + fn = 이름 리펙토링
 - psvm : 자동 입력 public static void main(String[] args) { }
 - sout : 자동 입력 systemctl.print
 
